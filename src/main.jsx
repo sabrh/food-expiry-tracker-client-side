@@ -3,11 +3,46 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider, } from "react-router";
+import MainLayout from './layouts/MainLayout.jsx';
+import Home from './pages/Home.jsx'
+import Login from './pages/login.jsx'; 
+import ErrorPage from './pages/ErrorPage.jsx';
+import Register from './pages/Register.jsx';
+import Fridge from './pages/Fridge.jsx'
+import AddFood from './pages/AddFood.jsx'
+import MyItems from './pages/MyItems.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello World</div>,
+    errorElement: <ErrorPage />,
+    Component: MainLayout,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
+      },
+      {
+        path: "/fridge",
+        element: <Fridge />,
+      },
+      {
+        path: "/add-food",
+        element: <AddFood />,
+      },
+      {
+        path: "/my-items",
+        element: <MyItems />,
+      },
+    ]
   },
 ]);
 
