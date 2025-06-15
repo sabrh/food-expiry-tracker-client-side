@@ -16,7 +16,7 @@ const Expired = () => {
     
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 p-4">
           {items.map((item) => (
-            <div key={item._id} className="card bg-base-100 md:w-96 shadow-sm">
+            <div key={item._id} className="card bg-red-100 md:w-96 shadow-sm">
               <figure>
                 <img src={item.foodImage} alt={item.foodTitle} className="w-full h-40 object-cover rounded" />
               </figure>

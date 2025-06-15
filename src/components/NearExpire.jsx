@@ -32,7 +32,7 @@ const NearExpire = () => {
               <p><b>Expiry: </b>{item.expiryDate}</p>
             </div>
             <button
-            className="mt-3 px-4 py-2 md:w-1/2 bg-blue-400 text-white rounded-full hover:bg-blue-400"
+            className="mt-3 px-4 py-2 md:w-1/2 bg-blue-400 text-white cursor-pointer rounded-full hover:bg-blue-400"
             onClick={() => navigate(`/food/${item._id}`)}
             >
             See Details
