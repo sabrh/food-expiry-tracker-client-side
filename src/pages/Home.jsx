@@ -1,10 +1,15 @@
 import React from 'react';
+import Banner from '../components/Banner';
+import NearExpire from '../components/NearExpire';
+import Expired from '../components/Expired';
 
 const Home = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+          <Banner />
+          <NearExpire />
+          <Expired />  
+        </>
     );
 };
 

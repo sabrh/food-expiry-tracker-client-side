@@ -11,6 +11,7 @@ import Register from './pages/Register.jsx';
 import Fridge from './pages/Fridge.jsx'
 import AddFood from './pages/AddFood.jsx'
 import MyItems from './pages/MyItems.jsx'
+import FoodDetails from './pages/FoodDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: "/my-items",
         element: <MyItems />,
+      },
+      {
+        path: "/food/:id",
+        element: <FoodDetails />,
       },
     ]
   },

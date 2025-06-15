@@ -1,0 +1,191 @@
+[
+  {
+    "foodImage": "https://images.immediate.co.uk/production/volatile/sites/30/2020/02/Glass-and-bottle-of-milk-fe0997a.jpg",
+    "foodTitle": "Milk",
+    "category": "Dairy",
+    "quantity": 2,
+    "expiryDate": "2025-06-15",
+    "description": "Fresh full cream milk, rich in calcium",
+    "addedDate": "2025-06-10"
+  },
+  {
+    "foodImage": "https://www.tasteofhome.com/wp-content/uploads/2022/09/GettyImages-470340853.jpg",
+    "foodTitle": "Cheddar Cheese",
+    "category": "Dairy",
+    "quantity": 1,
+    "expiryDate": "2025-06-18",
+    "description": "Sharp aged cheddar cheese block",
+    "addedDate": "2025-06-10"
+  },
+  {
+    "foodImage": "https://www.allrecipes.com/thmb/NxZlOY_OcNE3N2ab6ki9nmzPb9o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ar-greek-yogurt-tt-ashia-aubourg-4x3-a8864eded44547e283803f5d60e00349.jpg",
+    "foodTitle": "Yogurt",
+    "category": "Dairy",
+    "quantity": 3,
+    "expiryDate": "2025-06-14",
+    "description": "Plain probiotic yogurt",
+    "addedDate": "2025-06-10"
+  },
+  {
+    "foodImage": "https://www.vice.com/wp-content/uploads/sites/2/2019/03/1552507562818-GettyImages-118369505.jpeg",
+    "foodTitle": "Chicken Breast",
+    "category": "Meat",
+    "quantity": 2,
+    "expiryDate": "2025-06-13",
+    "description": "Boneless skinless chicken breast",
+    "addedDate": "2025-06-10"
+  },
+  {
+    "foodImage": "https://t4.ftcdn.net/jpg/02/06/90/95/360_F_206909522_pgMb7I8U39I0e11x0KWi0X98Z3A1TZ48.jpg",
+    "foodTitle": "Beef Steak",
+    "category": "Meat",
+    "quantity": 1,
+    "expiryDate": "2025-06-16",
+    "description": "Premium quality sirloin steak",
+    "addedDate": "2025-06-10"
+  },
+  {
+    "foodImage": "https://akaroasalmon.co.nz/cdn/shop/files/Image_12_21d38d8a-de27-46bc-9b0b-a0f5a4e6b417.jpg?v=1714508448&width=1946",
+    "foodTitle": "Salmon Fillet",
+    "category": "Meat",
+    "quantity": 2,
+    "expiryDate": "2025-06-17",
+    "description": "Fresh Atlantic salmon fillet",
+    "addedDate": "2025-06-10"
+  },
+  {
+    "foodImage": "https://149880802.v2.pressablecdn.com/wp-content/uploads/53155733592_ce292a7118_c1.jpg",
+    "foodTitle": "Spinach",
+    "category": "Vegetables",
+    "quantity": 3,
+    "expiryDate": "2025-06-13",
+    "description": "Fresh organic spinach leaves",
+    "addedDate": "2025-06-10"
+  },
+  {
+    "foodImage": "https://www.hhs1.com/hubfs/carrots%20on%20wood-1.jpg",
+    "foodTitle": "Carrots",
+    "category": "Vegetables",
+    "quantity": 4,
+    "expiryDate": "2025-06-20",
+    "description": "Crunchy orange carrots",
+    "addedDate": "2025-06-10"
+  },
+  {
+    "foodImage": "https://snaped.fns.usda.gov/sites/default/files/styles/crop_ratio_7_5/public/seasonal-produce/2018-05/broccoli.jpg.webp?itok=9hD8BBER",
+    "foodTitle": "Broccoli",
+    "category": "Vegetables",
+    "quantity": 2,
+    "expiryDate": "2025-06-16",
+    "description": "Green and healthy broccoli florets",
+    "addedDate": "2025-06-10"
+  },
+  {
+    "foodImage": "https://bedford.tennessee.edu/wp-content/uploads/sites/162/2020/08/SweetPeppers.jpg",
+    "foodTitle": "Bell Peppers",
+    "category": "Vegetables",
+    "quantity": 5,
+    "expiryDate": "2025-06-15",
+    "description": "Mixed color sweet bell peppers",
+    "addedDate": "2025-06-10"
+  },
+  {
+    "foodImage": "https://images.ctfassets.net/trvmqu12jq2l/2IOUOL3CukVFGv7wTWrhfN/88259dcabcb1cd1c0d17de346dbb1bc7/CxBlog-DD-PotatoChips-LEAD.jpg?q=70&w=1208&h=1080&f=faces&fit=fill",
+    "foodTitle": "Potato Chips",
+    "category": "Snacks",
+    "quantity": 3,
+    "expiryDate": "2025-07-10",
+    "description": "Crunchy salted potato chips",
+    "addedDate": "2025-06-10"
+  },
+  {
+    "foodImage": "https://www.tastingtable.com/img/gallery/16-popular-candy-bars-ranked-worst-to-best/intro-1736017310.jpg",
+    "foodTitle": "Chocolate Bar",
+    "category": "Snacks",
+    "quantity": 2,
+    "expiryDate": "2025-07-05",
+    "description": "Milk chocolate bar",
+    "addedDate": "2025-06-10"
+  },
+  {
+    "foodImage": "https://www.allrecipes.com/thmb/CMV8J6kB9KockLf_J_Ncb0_s8hQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-223467-Granola-Bars-ddmfs-4x3-43a1421950074122a5477af757293bfb.jpg",
+    "foodTitle": "Granola Bars",
+    "category": "Snacks",
+    "quantity": 4,
+    "expiryDate": "2025-07-01",
+    "description": "Healthy oats and nuts granola bars",
+    "addedDate": "2025-06-10"
+  },
+  {
+    "foodImage": "https://tarateaspoon.com/wp-content/uploads/2022/05/small-batch-chocolate-chip-cookies-10-sq-feature.jpeg",
+    "foodTitle": "Cookies",
+    "category": "Snacks",
+    "quantity": 2,
+    "expiryDate": "2025-06-25",
+    "description": "Freshly baked chocolate chip cookies",
+    "addedDate": "2025-06-10"
+  },
+  {
+    "foodImage": "https://cdn.shopify.com/s/files/1/1423/7286/files/oi-ocha-unsweetened-green-tea_480x480.jpg?v=1724830842",
+    "foodTitle": "Green Tea",
+    "category": "Drinks",
+    "quantity": 3,
+    "expiryDate": "2025-07-15",
+    "description": "Organic green tea bottles",
+    "addedDate": "2025-06-10"
+  },
+  {
+    "foodImage": "https://cdn.thewirecutter.com/wp-content/media/2024/10/butter-2048px-3657.jpg?auto=webp&quality=75&width=1024",
+    "foodTitle": "Butter",
+    "category": "Dairy",
+    "quantity": 1,
+    "expiryDate": "2025-06-20",
+    "description": "Salted dairy butter",
+    "addedDate": "2025-06-10"
+  },
+  {
+    "foodImage": "https://www.southernliving.com/thmb/7Pg9J4Q0dyVevZtiq-3p2GnohQA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Eggs_002_preview-8d532a48790b4a5190e513de08678e7f.jpg",
+    "foodTitle": "Eggs",
+    "category": "Meat",
+    "quantity": 12,
+    "expiryDate": "2025-06-19",
+    "description": "Free-range organic eggs",
+    "addedDate": "2025-06-10"
+  },
+  {
+    "foodImage": "https://i.ibb.co/VcDVLdGq/tomato.jpg",
+    "foodTitle": "Tomatoes",
+    "category": "Vegetables",
+    "quantity": 6,
+    "expiryDate": "2025-06-14",
+    "description": "Ripe red tomatoes",
+    "addedDate": "2025-06-10"
+  },
+  {
+    "foodImage": "https://porshacarrblog.com/wp-content/uploads/2020/12/82D9B9EC-7C9F-4954-9946-CC95476FE030-683x1024.jpeg",
+    "foodTitle": "Sour Cream",
+    "category": "Dairy",
+    "quantity": 1,
+    "expiryDate": "2025-06-16",
+    "description": "Rich sour cream for cooking",
+    "addedDate": "2025-06-10"
+  },
+  {
+    "foodImage": "https://www.budgetbytes.com/wp-content/uploads/2023/08/Fish-Sticks-plate.jpg",
+    "foodTitle": "Fish Sticks",
+    "category": "Meat",
+    "quantity": 10,
+    "expiryDate": "2025-06-22",
+    "description": "Breaded fish sticks, frozen",
+    "addedDate": "2025-06-10"
+  },
+  {
+    "foodImage": "https://snaped.fns.usda.gov/sites/default/files/seasonal-produce/2018-05/cucumbers2.jpg",
+    "foodTitle": "Cucumber",
+    "category": "Vegetables",
+    "quantity": 2,
+    "expiryDate": "2025-06-13",
+    "description": "Fresh green cucumbers",
+    "addedDate": "2025-06-10"
+  }
+]
