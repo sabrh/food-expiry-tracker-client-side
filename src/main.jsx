@@ -5,9 +5,9 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider, } from "react-router";
 import MainLayout from './layouts/MainLayout.jsx';
 import Home from './pages/Home.jsx'
-import Login from './pages/login.jsx'; 
+import Login from './auth/Login.jsx'; 
 import ErrorPage from './pages/ErrorPage.jsx';
-import Register from './pages/Register.jsx';
+import Register from './auth/Register.jsx';
 import Fridge from './pages/Fridge.jsx'
 import AddFood from './pages/AddFood.jsx'
 import MyItems from './pages/MyItems.jsx'
