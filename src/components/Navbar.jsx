@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { NavLink, useLocation } from 'react-router';
 import logoImg from '../assets/logo.png';
 import { signOut } from 'firebase/auth';
@@ -7,8 +7,6 @@ import AuthContext from '../context/AuthContext'
 const Navbar = () => {
      const location=useLocation()
         const {user}=useContext(AuthContext)
-        
-        const [dropdownOpen, setDropdownOpen] = useState(false)
     
         const handleLogout= () => {
             signOut(auth)
@@ -17,7 +15,6 @@ const Navbar = () => {
             })
             .catch(err => console.error(err))
     
-            setDropdownOpen(false)
         }
     const links = 
         <>
@@ -67,17 +64,9 @@ const Navbar = () => {
                     Register</NavLink>  
                 </div>  
                 ) : (
-                <div className="relative cursor-pointer" onClick={() => setDropdownOpen(!dropdownOpen)}
-                    onMouseLeave={() => setDropdownOpen(false)}>
-                    <img className="w-12 h-12 rounded-full border" src={user?.photoURL}
-                    alt="User" title={user?.displayName} />
-                    {dropdownOpen && (
-                    <div className="absolute top-12 right-0 bg-white border rounded shadow p-2">
-                        <p className="font-semibold mb-2">{user.displayName}</p>
-                        <button onClick={handleLogout} className="btn btn-sm bg-red-400 text-white w-full">Logout
-                        </button>
-                    </div>
-                    )}
+                <div className='flex flex-row items-center gap-4'>
+                    <img className="w-12 h-12 rounded-full border" src={user?.photoURL} alt="User" title={user?.displayName} />
+                    <button onClick={handleLogout} className="btn btn-error text-white rounded-full">Logout</button>
                 </div>
                 )}
             
