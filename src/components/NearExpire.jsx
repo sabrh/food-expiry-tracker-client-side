@@ -25,7 +25,7 @@ const NearExpire = () => {
           <div className="card-body">
             <h2 className="card-title">
               {item.foodTitle}
-              <div className="badge badge-secondary">{item.category}</div>
+              <div className="badge badge-info">{item.category}</div>
             </h2>
             <div className="card-actions">
               <p><b>Quantity: </b>{item.quantity}</p>

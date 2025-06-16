@@ -6,7 +6,7 @@ import { AiOutlineYoutube } from 'react-icons/ai';
 const Footer = () => {
     return (
         
-        <footer className="footer footer-horizontal bg-neutral text-neutral-content items-center p-4 px-10">
+        <footer className="footer footer-horizontal bg-neutral text-neutral-content items-center py-4 px-6 md:px-14">
             <aside className="grid-flow-col items-center">
                 <img src={logoImg} className="w-8 bg-white rounded-full" alt='logo' />
                 <p>Copyright © {new Date().getFullYear()} - All right reserved</p>

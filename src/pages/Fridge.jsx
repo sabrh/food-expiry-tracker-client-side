@@ -22,9 +22,9 @@ const Fridge = () => {
     <>
     <h3 className="flex justify-center items-center font-bold text-blue-500 text-center text-2xl"><GiIceCubes /> Fridge <RiFridgeFill /> </h3>
 
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 p-4">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
       {items.map((item) => (
-        <div key={item._id} className="card bg-base-100 md:w-96 shadow-sm">
+        <div key={item._id} className="card bg-base-100 md:w-70 shadow-sm">
           <figure>
             <img src={item.foodImage} alt={item.foodTitle} className="w-full h-40 object-cover rounded" />
           </figure>
