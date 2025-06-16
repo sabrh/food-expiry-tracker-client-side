@@ -70,7 +70,7 @@ const Login = () => {
     return (
         <div className="card bg-base-100 max-w-3xl mx-auto shrink-0 mt-2">
           <div className='flex flex-row'>
-            <div className='w-1/3 mt-14 md:mr-4'>
+            <div className='w-1/3 mt-14'>
                 <Lottie style={{width:'200px'}} animationData={LoginAnimation} loop={true}></Lottie>
             </div>
             <div className="card-body w-2/3">

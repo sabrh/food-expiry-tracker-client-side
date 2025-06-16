@@ -24,13 +24,21 @@ const Navbar = () => {
             <li><NavLink to='/fridge' className={({ isActive }) => isActive ? 
             'underline  text-gray-800 underline-offset-4 font-semibold' : ''}>Fridge</NavLink></li>
 
-            <li><NavLink to='/add-food' className={({ isActive }) => isActive ? 
-            'underline  text-gray-800 underline-offset-4 font-semibold' : ''}>Add Food</NavLink></li>
+            {user && (
+                <>
+                    <li>
+                    <NavLink to="/add-food" className={({ isActive }) =>
+                        isActive ? 'underline text-gray-800 underline-offset-4 font-semibold' : ''}>Add Food</NavLink>
+                    </li>
 
-            <li><NavLink to='/my-items' className={({ isActive }) => isActive ? 
-            'underline  text-gray-800 underline-offset-4 font-semibold' : ''}>My Items</NavLink></li>
-
+                    <li>
+                    <NavLink to="/my-items" className={({ isActive }) =>
+                        isActive ? 'underline text-gray-800 underline-offset-4 font-semibold' : ''}>My Items</NavLink>
+                    </li>
+                </>
+            )}
         </>
+
     return (
         <div className="navbar bg-base-200 shadow-sm md:px-16">
 
@@ -54,7 +62,7 @@ const Navbar = () => {
                 </ul>
             </div>
             
-           <div className="navbar-end relative md:justify-between items-center gap-x-4">
+           <div className="navbar-end relative md:justify-between items-center gap-x-4 md:ml-10">
             {!user ? (
                 <div className='flex flex-row justify-end items-center gap-4'>
                     <p className='text-gray-800 font-bold'><NavLink to='/login' className={({ isActive }) => isActive ? 
