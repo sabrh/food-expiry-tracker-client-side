@@ -12,6 +12,8 @@ import Fridge from './pages/Fridge.jsx'
 import AddFood from './pages/AddFood.jsx'
 import MyItems from './pages/MyItems.jsx'
 import FoodDetails from './pages/FoodDetails.jsx';
+import AuthProvider from './context/AuthProvider.jsx';
+import PrivateRoute from './routes/PrivateRoute.jsx';
 
 const router = createBrowserRouter([
   {
@@ -37,15 +39,27 @@ const router = createBrowserRouter([
       },
       {
         path: "/add-food",
-        element: <AddFood />,
+        element: (
+          <PrivateRoute>
+            <AddFood />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/my-items",
-        element: <MyItems />,
+        element: (
+          <PrivateRoute>
+            <MyItems />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/food/:id",
-        element: <FoodDetails />,
+        element: (
+          <PrivateRoute>
+            <FoodDetails />
+          </PrivateRoute>
+        ),
       },
     ]
   },
@@ -53,6 +67,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>,
 )

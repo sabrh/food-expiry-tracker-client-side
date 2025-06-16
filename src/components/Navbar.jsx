@@ -1,7 +1,24 @@
-import React from 'react';
-import { NavLink } from 'react-router';
+import React, { useContext, useState } from 'react';
+import { NavLink, useLocation } from 'react-router';
 import logoImg from '../assets/logo.png';
+import { signOut } from 'firebase/auth';
+import { auth } from '../firebase/firebase.init';
+import AuthContext from '../context/AuthContext'
 const Navbar = () => {
+     const location=useLocation()
+        const {user}=useContext(AuthContext)
+        
+        const [dropdownOpen, setDropdownOpen] = useState(false)
+    
+        const handleLogout= () => {
+            signOut(auth)
+            .then(() => {
+                console.log('User logged out')
+            })
+            .catch(err => console.error(err))
+    
+            setDropdownOpen(false)
+        }
     const links = 
         <>
             <li><NavLink to='/' className={({ isActive }) => isActive ? 
@@ -41,22 +58,14 @@ const Navbar = () => {
             </div>
             
            <div className="navbar-end relative md:justify-between items-center gap-x-4">
-            <p className='text-gray-800 font-bold'><NavLink to='/login' className={({ isActive }) => isActive ? 
-            'underline  text-gray-800 underline-offset-4 font-semibold' : ''}>Login</NavLink></p>
+            {!user ? (
+                <div className='flex flex-row justify-end items-center gap-4'>
+                    <p className='text-gray-800 font-bold'><NavLink to='/login' className={({ isActive }) => isActive ? 
+                    'underline  text-gray-800 underline-offset-4 font-semibold' : ''}>Login</NavLink></p>
 
-            <NavLink to="/register" state={{ from: location.pathname }} className="btn rounded-full bg-gray-900 text-white hover:bg-white hover:text-gray-900 border-gray-800">
-            Register</NavLink>    
-            </div>
-        </div>
-    );
-};
-
-export default Navbar;
-
-/*
-{!user ? (
-                <NavLink to="/login" state={{ from: location.pathname }} className="btn rounded-full bg-green-700 text-white hover:bg-white hover:text-green-700">
-                Login/Signup</NavLink>
+                    <NavLink to="/register" state={{ from: location.pathname }} className="btn rounded-full bg-gray-900 text-white hover:bg-white hover:text-gray-900 border-gray-800">
+                    Register</NavLink>  
+                </div>  
                 ) : (
                 <div className="relative cursor-pointer" onClick={() => setDropdownOpen(!dropdownOpen)}
                     onMouseLeave={() => setDropdownOpen(false)}>
@@ -65,9 +74,16 @@ export default Navbar;
                     {dropdownOpen && (
                     <div className="absolute top-12 right-0 bg-white border rounded shadow p-2">
                         <p className="font-semibold mb-2">{user.displayName}</p>
-                        <button onClick={handleLogout} className="btn btn-sm bg-red-600 text-white w-full">Logout
+                        <button onClick={handleLogout} className="btn btn-sm bg-red-400 text-white w-full">Logout
                         </button>
                     </div>
                     )}
                 </div>
-                */
+                )}
+            
+            </div>
+        </div>
+    );
+};
+
+export default Navbar;
