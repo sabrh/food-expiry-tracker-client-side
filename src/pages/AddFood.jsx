@@ -62,7 +62,7 @@ const AddFood = () => {
           <option value="">Select Category</option>
           <option value="Dairy">Dairy</option>
           <option value="Meat">Meat</option>
-          <option value="Vegetables">Vegetables</option>
+          <option value="Vegetables">Fruit/Vegetables</option>
           <option value="Snacks">Snacks</option>
           <option value="Drinks">Drinks</option>
         </select>
