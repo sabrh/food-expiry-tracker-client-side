@@ -3,7 +3,8 @@ import Banner from '../components/Banner';
 import NearExpire from '../components/NearExpire';
 import Expired from '../components/Expired';
 import StorageTips from '../components/StorageTips';
-import ReduceWaste from '../components/ReduceWaste';
+import ExpiryTimer from '../components/ExpiryTimer';
+import Quote from '../components/Quote';
 
 const Home = () => {
     return (
@@ -11,8 +12,9 @@ const Home = () => {
           <Banner />
           <StorageTips />
           <NearExpire />
+          <Quote />
+          <ExpiryTimer />
           <Expired />  
-          <ReduceWaste />
         </>
     );
 };

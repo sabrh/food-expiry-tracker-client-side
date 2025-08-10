@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ReduceWaste = () => {
+const ExpiryTimer = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const ReduceWaste = () => {
     );
 };
 
-export default ReduceWaste;
+export default ExpiryTimer;
