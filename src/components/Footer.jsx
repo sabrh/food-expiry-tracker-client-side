@@ -17,13 +17,13 @@ const Footer = () => {
         <nav>
             <h6 className="footer-title font-bold">Socials</h6>
             <div className="grid grid-flow-col gap-4">
-            <a href='www.facebook.com'>
+            <a href='https://www.facebook.com' target='_blank'>
                 <CiFacebook  size={30}/>
             </a>
-            <a>
+            <a href='https://www.youtube.com' target='_blank'>
                 <AiOutlineYoutube size={30}/>
             </a>
-            <a>
+            <a href='https://www.instagram.com' target='_blank'>
                 <FaInstagram size={30}/>
             </a>
             </div>

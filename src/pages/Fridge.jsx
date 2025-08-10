@@ -66,8 +66,7 @@ const Fridge = () => {
 
   return (
     <>
-    <h3 className="flex justify-center items-center font-bold text-blue-500 text-center text-2xl"><GiIceCubes /> Fridge <RiFridgeFill /> </h3>
-
+    
     {/* React Countup */}
       <div className="flex justify-center gap-8 my-4 text-lg font-semibold text-center">
         <div className="bg-red-100 p-4 rounded">
@@ -105,12 +104,12 @@ const Fridge = () => {
             )}
             </h2>
             <div className="card-actions">
-              <div className="badge badge-info">{item.category}</div>
+              <p className="text-blue-600"><b>{item.category}</b></p> 
               <p><b>Quantity: </b>{item.quantity}</p>
               <p><b>Expiry: </b>{item.expiryDate}</p>
             </div>
             
-            <button className="mt-3 px-4 py-2 md:w-1/2 bg-blue-400 text-white cursor-pointer rounded-full hover:bg-blue-400"
+            <button className="mt-3 px-4 py-2 md:w-1/2 btn btn-outline btn-info cursor-pointer rounded-full"
             onClick={() => navigate(`/food/${item._id}`)}> See Details </button>
           </div>
         </div>
