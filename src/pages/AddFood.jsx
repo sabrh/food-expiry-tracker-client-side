@@ -53,7 +53,7 @@ const AddFood = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto p-4">
+    <div className="max-w-xl mx-auto p-4 mt-14">
       <h2 className="text-2xl text-gray-700 font-bold mb-4">Add your Food in the Fridge!</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <input name="foodImage" placeholder="Food Image URL" onChange={handleChange} required className="input input-bordered w-full" />

@@ -34,7 +34,7 @@ const Banner = () => {
   ];
 
   return (
-    <div className="mx-auto">
+    <div className="mx-auto mt-14">
       <Slider {...settings}>
         {banners.map((banner, index) => (
           <div key={index} className="relative">

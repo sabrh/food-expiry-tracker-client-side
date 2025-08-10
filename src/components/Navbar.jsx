@@ -4,11 +4,7 @@ import logoImg from '../assets/fresh-food.png';
 import { signOut } from 'firebase/auth';
 import { auth } from '../firebase/firebase.init';
 import AuthContext from '../context/AuthContext'
-import { GiMeat } from "react-icons/gi";
-import { FaCarrot } from "react-icons/fa";
-import { PiCheeseFill } from "react-icons/pi";
-import { GiChocolateBar } from "react-icons/gi";
-import { TbBottleFilled } from "react-icons/tb";
+
 
 const Navbar = () => {
      const location=useLocation()
@@ -30,20 +26,8 @@ const Navbar = () => {
             <li className='uppercase'><NavLink to='/fridge' className={({ isActive }) => isActive ? 
             'underline  text-blue-400 underline-offset-4 font-bold' : ''}>Fridge</NavLink></li>
 
-            <li className='uppercase'><NavLink to='/fruit-veg' className={({ isActive }) => isActive ? 
-            'underline  text-blue-400 underline-offset-4 font-bold' : ''}><FaCarrot size={20} />Fruits/ Veg</NavLink></li>
-
-            <li className='uppercase'><NavLink to='/meat-fish' className={({ isActive }) => isActive ? 
-            'underline  text-blue-400 underline-offset-4 font-bold' : ''}><GiMeat size={20}/>Meats & Fish</NavLink></li>
-
-            <li className='uppercase'><NavLink to='/dairy' className={({ isActive }) => isActive ? 
-            'underline  text-blue-400 underline-offset-4 font-bold' : ''}><PiCheeseFill size={20} />Dairy</NavLink></li>
-
-            <li className='uppercase'><NavLink to='/snacks' className={({ isActive }) => isActive ? 
-            'underline  text-blue-400 underline-offset-4 font-bold' : ''}><GiChocolateBar size={20} />Snacks</NavLink></li>
-
-            <li className='uppercase'><NavLink to='/drinks' className={({ isActive }) => isActive ? 
-            'underline  text-blue-400 underline-offset-4 font-bold' : ''}><TbBottleFilled size={20} />Drinks</NavLink></li>
+            <li className='uppercase'><NavLink to='/analytics' className={({ isActive }) => isActive ? 
+            'underline  text-blue-400 underline-offset-4 font-bold' : ''}>Analytics</NavLink></li>
 
 
             {user && (
@@ -62,7 +46,7 @@ const Navbar = () => {
         </>
 
     return (
-        <div className="navbar shadow-sm md:px-16">
+        <div className="navbar fixed top-0 left-0 w-full bg-white shadow-md z-50 md:px-16">
             {/* LEFT - Logo */}
             <div className="navbar-start">
                 <div className="dropdown">

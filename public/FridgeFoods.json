@@ -15,7 +15,7 @@
     "quantity": 1,
     "expiryDate": "2025-06-18",
     "description": "Sharp aged cheddar cheese block",
-    "addedDate": "2025-06-10"
+    "addedDate": "2025-08-13"
   },
   {
     "foodImage": "https://www.allrecipes.com/thmb/NxZlOY_OcNE3N2ab6ki9nmzPb9o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ar-greek-yogurt-tt-ashia-aubourg-4x3-a8864eded44547e283803f5d60e00349.jpg",
@@ -24,14 +24,14 @@
     "quantity": 3,
     "expiryDate": "2025-06-14",
     "description": "Plain probiotic yogurt",
-    "addedDate": "2025-06-10"
+    "addedDate": "2025-08-15"
   },
   {
     "foodImage": "https://www.vice.com/wp-content/uploads/sites/2/2019/03/1552507562818-GettyImages-118369505.jpeg",
     "foodTitle": "Chicken Breast",
     "category": "Meat",
     "quantity": 2,
-    "expiryDate": "2025-06-13",
+    "expiryDate": "2025-08-26",
     "description": "Boneless skinless chicken breast",
     "addedDate": "2025-06-10"
   },
@@ -40,7 +40,7 @@
     "foodTitle": "Beef Steak",
     "category": "Meat",
     "quantity": 1,
-    "expiryDate": "2025-06-16",
+    "expiryDate": "2025-08-25",
     "description": "Premium quality sirloin steak",
     "addedDate": "2025-06-10"
   },
@@ -49,7 +49,7 @@
     "foodTitle": "Salmon Fillet",
     "category": "Meat",
     "quantity": 2,
-    "expiryDate": "2025-06-17",
+    "expiryDate": "2025-08-23",
     "description": "Fresh Atlantic salmon fillet",
     "addedDate": "2025-06-10"
   },
@@ -58,7 +58,7 @@
     "foodTitle": "Spinach",
     "category": "Vegetables",
     "quantity": 3,
-    "expiryDate": "2025-06-13",
+    "expiryDate": "2025-08-19",
     "description": "Fresh organic spinach leaves",
     "addedDate": "2025-06-10"
   },
@@ -67,7 +67,7 @@
     "foodTitle": "Carrots",
     "category": "Vegetables",
     "quantity": 4,
-    "expiryDate": "2025-06-20",
+    "expiryDate": "2025-08-20",
     "description": "Crunchy orange carrots",
     "addedDate": "2025-06-10"
   },
@@ -76,7 +76,7 @@
     "foodTitle": "Broccoli",
     "category": "Vegetables",
     "quantity": 2,
-    "expiryDate": "2025-06-16",
+    "expiryDate": "2025-08-27",
     "description": "Green and healthy broccoli florets",
     "addedDate": "2025-06-10"
   },
@@ -85,7 +85,7 @@
     "foodTitle": "Bell Peppers",
     "category": "Vegetables",
     "quantity": 5,
-    "expiryDate": "2025-06-15",
+    "expiryDate": "2025-08-22",
     "description": "Mixed color sweet bell peppers",
     "addedDate": "2025-06-10"
   },
@@ -94,7 +94,7 @@
     "foodTitle": "Potato Chips",
     "category": "Snacks",
     "quantity": 3,
-    "expiryDate": "2025-07-10",
+    "expiryDate": "2025-08-26",
     "description": "Crunchy salted potato chips",
     "addedDate": "2025-06-10"
   },
@@ -103,7 +103,7 @@
     "foodTitle": "Chocolate Bar",
     "category": "Snacks",
     "quantity": 2,
-    "expiryDate": "2025-07-05",
+    "expiryDate": "2025-08-26",
     "description": "Milk chocolate bar",
     "addedDate": "2025-06-10"
   },
@@ -121,7 +121,7 @@
     "foodTitle": "Cookies",
     "category": "Snacks",
     "quantity": 2,
-    "expiryDate": "2025-06-25",
+    "expiryDate": "2025-08-16",
     "description": "Freshly baked chocolate chip cookies",
     "addedDate": "2025-06-10"
   },
@@ -130,7 +130,7 @@
     "foodTitle": "Green Tea",
     "category": "Drinks",
     "quantity": 3,
-    "expiryDate": "2025-07-15",
+    "expiryDate": "2025-08-17",
     "description": "Organic green tea bottles",
     "addedDate": "2025-06-10"
   },
@@ -139,7 +139,7 @@
     "foodTitle": "Butter",
     "category": "Dairy",
     "quantity": 1,
-    "expiryDate": "2025-06-20",
+    "expiryDate": "2025-08-21",
     "description": "Salted dairy butter",
     "addedDate": "2025-06-10"
   },
@@ -148,7 +148,7 @@
     "foodTitle": "Eggs",
     "category": "Meat",
     "quantity": 12,
-    "expiryDate": "2025-06-19",
+    "expiryDate": "2025-08-26",
     "description": "Free-range organic eggs",
     "addedDate": "2025-06-10"
   },
@@ -166,7 +166,7 @@
     "foodTitle": "Sour Cream",
     "category": "Dairy",
     "quantity": 1,
-    "expiryDate": "2025-06-16",
+    "expiryDate": "2025-08-30",
     "description": "Rich sour cream for cooking",
     "addedDate": "2025-06-10"
   },
@@ -175,7 +175,7 @@
     "foodTitle": "Fish Sticks",
     "category": "Meat",
     "quantity": 10,
-    "expiryDate": "2025-06-22",
+    "expiryDate": "2025-08-30",
     "description": "Breaded fish sticks, frozen",
     "addedDate": "2025-06-10"
   },
@@ -184,7 +184,7 @@
     "foodTitle": "Cucumber",
     "category": "Vegetables",
     "quantity": 2,
-    "expiryDate": "2025-06-13",
+    "expiryDate": "2025-08-18",
     "description": "Fresh green cucumbers",
     "addedDate": "2025-06-10"
   }

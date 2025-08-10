@@ -14,12 +14,7 @@ import MyItems from './pages/MyItems.jsx'
 import FoodDetails from './pages/FoodDetails.jsx';
 import AuthProvider from './context/AuthProvider.jsx';
 import PrivateRoute from './routes/PrivateRoute.jsx';
-import Veg from './pages/Veg.jsx';
-import Meats from './pages/Meats.jsx';
-import Dairy from './pages/Dairy.jsx';
-import Snacks from './pages/Snacks.jsx';
-import Drinks from './pages/Drinks.jsx';
-import Auth from './layouts/AuthLayout.jsx';
+import Analytics from './pages/Analytics.jsx';
 import AuthLayout from './layouts/AuthLayout.jsx';
 
 const router = createBrowserRouter([
@@ -37,24 +32,8 @@ const router = createBrowserRouter([
         element: <Fridge />,
       },
       {
-        path: "/fruit-veg",
-        element: <Veg />,
-      },
-      {
-        path: "/meat-fish",
-        element: <Meats />,
-      },
-      {
-        path: "/dairy",
-        element: <Dairy />,
-      },
-      {
-        path: "/snacks",
-        element: <Snacks />,
-      },
-      {
-        path: "/drinks",
-        element: <Drinks />,
+        path: "/analytics",
+        element: <Analytics />,
       },
       {
         path: "/add-food",

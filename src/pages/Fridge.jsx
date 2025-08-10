@@ -68,7 +68,7 @@ const Fridge = () => {
     <>
     
     {/* React Countup */}
-      <div className="flex justify-center gap-8 my-4 text-lg font-semibold text-center">
+      <div className="flex justify-center mt-18 gap-8 my-4 text-lg font-semibold text-center">
         <div className="bg-red-100 p-4 rounded">
           Expired: <CountUp end={expiredCount} duration={10} />
         </div>
