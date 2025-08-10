@@ -67,8 +67,10 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <AuthProvider>
+    <div className='dosis-regular'>
+      <AuthProvider>
       <RouterProvider router={router} />
     </AuthProvider>
+    </div>
   </StrictMode>,
 )

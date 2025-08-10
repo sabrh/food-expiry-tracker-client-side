@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@import "slick-carousel/slick/slick.css"; 
+@import "slick-carousel/slick/slick-theme.css";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+.dosis-regular {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}

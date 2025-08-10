@@ -13,7 +13,7 @@ const NearExpire = () => {
 
   return (
     <>
-    <h3 className="flex mt-8 justify-center items-center font-bold text-yellow-600 text-center text-2xl">Nearly Expired Items </h3>
+    <h3 className="flex mt-8 font-bold text-gray-700 text-2xl">Nearly Expired Items </h3>
 
     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
       {items.map((item) => (
