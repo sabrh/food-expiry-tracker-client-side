@@ -7,7 +7,7 @@ import { NavLink } from 'react-router';
 
 const Footer = () => {
     return (
-        <footer className="footer justify-between sm:footer-horizontal bg-blue-900 text-neutral-content md:px-16 p-10">
+        <footer className="footer justify-between sm:footer-horizontal bg-gray-900 text-neutral-content md:px-16 p-10">
         <aside>
             <NavLink to='/' className="flex items-center font-extrabold text-2xl text-white gap-x-2"><img src={logoImg} className="w-10 bg-white rounded-full" alt='logo' />ExpiryTracker</NavLink>
             <p>

@@ -50,12 +50,12 @@ const Navbar = () => {
                 <>
                     <li className='uppercase'>
                     <NavLink to="/add-food" className={({ isActive }) =>
-                        isActive ? 'underline text-gray-800 underline-offset-4 font-semibold' : ''}>Add Food</NavLink>
+                        isActive ? 'underline  text-blue-400 underline-offset-4 font-bold' : ''}>Add Food</NavLink>
                     </li>
 
                     <li className='uppercase'>
                     <NavLink to="/my-items" className={({ isActive }) =>
-                        isActive ? 'underline text-gray-800 underline-offset-4 font-semibold' : ''}>My Items</NavLink>
+                        isActive ? 'underline  text-blue-400 underline-offset-4 font-bold' : ''}>My Items</NavLink>
                     </li>
                 </>
             )}
@@ -86,7 +86,7 @@ const Navbar = () => {
         </div>
 
         {/* CENTER - Links */}
-        <div className="navbar-center hidden lg:flex justify-center">
+        <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
 

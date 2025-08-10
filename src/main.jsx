@@ -14,6 +14,13 @@ import MyItems from './pages/MyItems.jsx'
 import FoodDetails from './pages/FoodDetails.jsx';
 import AuthProvider from './context/AuthProvider.jsx';
 import PrivateRoute from './routes/PrivateRoute.jsx';
+import Veg from './pages/Veg.jsx';
+import Meats from './pages/Meats.jsx';
+import Dairy from './pages/Dairy.jsx';
+import Snacks from './pages/Snacks.jsx';
+import Drinks from './pages/Drinks.jsx';
+import Auth from './layouts/AuthLayout.jsx';
+import AuthLayout from './layouts/AuthLayout.jsx';
 
 const router = createBrowserRouter([
   {
@@ -26,16 +33,28 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/login",
-        element: <Login />,
-      },
-      {
-        path: "/register",
-        element: <Register />,
-      },
-      {
         path: "/fridge",
         element: <Fridge />,
+      },
+      {
+        path: "/fruit-veg",
+        element: <Veg />,
+      },
+      {
+        path: "/meat-fish",
+        element: <Meats />,
+      },
+      {
+        path: "/dairy",
+        element: <Dairy />,
+      },
+      {
+        path: "/snacks",
+        element: <Snacks />,
+      },
+      {
+        path: "/drinks",
+        element: <Drinks />,
       },
       {
         path: "/add-food",
@@ -63,6 +82,21 @@ const router = createBrowserRouter([
       },
     ]
   },
+  {
+      path: '/',
+      Component: AuthLayout,
+      children: [
+        {
+          path: "/login",
+          element: <Login/>,
+        },
+        {
+          path: "/register",
+          element: <Register/>,
+        },
+        
+      ]
+    },
 ]);
 
 createRoot(document.getElementById('root')).render(

@@ -68,35 +68,61 @@ const Login = () => {
   }
 
     return (
-        <div className="card bg-base-100 max-w-3xl mx-auto shrink-0 mt-2">
-          <div className='flex flex-row'>
-            <div className='w-1/3 mt-14'>
-                <Lottie style={{width:'200px'}} animationData={LoginAnimation} loop={true}></Lottie>
+      <div className="flex justify-center items-center bg-gray-50">
+        <div className="w-full max-w-md bg-white p-8 rounded-xl shadow-md">
+          <h1 className="text-3xl font-bold text-gray-700 text-center mb-6">Welcome Back!</h1>
+
+          <form onSubmit={handleLogin} className="flex flex-col gap-4">
+            <label className="label font-semibold">Email</label>
+            <input
+              type="email"
+              name="email"
+              ref={emailRef}
+              className="input input-bordered w-full"
+              placeholder="Email"
+            />
+
+            <label className="label font-semibold">Password</label>
+            <input
+              type="password"
+              name="password"
+              className="input input-bordered w-full"
+              placeholder="Password"
+            />
+
+            <div onClick={handleForgetPassword} className="text-sm text-right">
+              <a className="link link-hover text-blue-500">Forgot password?</a>
             </div>
-            <div className="card-body w-2/3">
-            <h1 className="text-3xl font-bold text-blue-700">Login now!</h1>
-            <form onSubmit={handleLogin} className='flex flex-col'>
-              <label className="label">Email</label>
-              <input type="email" name="email" ref={emailRef} className="input" placeholder="Email" />
 
-              <label className="label">Password</label>
-              <input type="password" name="password" className="input" placeholder="Password" />
+            <button className="btn rounded-full bg-blue-700 text-white w-full">Login</button>
 
-              <div onClick={handleForgetPassword}><a className="link link-hover">Forgot password?</a></div>
-              <button className="btn rounded-full bg-blue-700 text-white mt-4 md:w-3/5">Login</button>
-              {
-                  errorMessage && <p className='text-red-600'>{errorMessage}</p>
-              }
-              {
-                  success && <p className='text-green-600'>LoggedIn!</p>
-              }
-              <p className='text-lg'>Don't have an account? <NavLink to='/register' className='text-blue-600 font-bold hover:underline'>Register</NavLink> here.</p>
-            </form>
-            <p className='text-start text-gray-500 text-lg'>-- OR --</p>
-            <button onClick={handleGoogleSignin} className="btn rounded-full border-green-700 md:w-3/5"><FcGoogle size={20} />Signin with Google</button>
+            {errorMessage && <p className="text-red-600 text-center">{errorMessage}</p>}
+            {success && <p className="text-green-600 text-center">Logged In!</p>}
+
+            <p className="text-center text-lg">
+              Don't have an account?{" "}
+              <NavLink to="/register" className="text-blue-600 font-bold hover:underline">
+                Register
+              </NavLink>{" "}
+              here.
+            </p>
+          </form>
+
+          <div className="flex items-center my-4">
+            <div className="flex-1 h-px bg-gray-300"></div>
+            <p className="mx-4 text-gray-500">OR</p>
+            <div className="flex-1 h-px bg-gray-300"></div>
           </div>
-          </div>
-        </div>   
+
+          <button
+            onClick={handleGoogleSignin}
+            className="btn rounded-full border-green-700 w-full flex items-center gap-2 justify-center"
+          >
+            <FcGoogle size={20} /> Sign in with Google
+          </button>
+        </div>
+      </div>
+ 
     );
 };
 

@@ -54,7 +54,7 @@ const AddFood = () => {
 
   return (
     <div className="max-w-xl mx-auto p-4">
-      <h2 className="text-2xl text-blue-500 font-bold mb-4">Add your Food in the Fridge!</h2>
+      <h2 className="text-2xl text-gray-700 font-bold mb-4">Add your Food in the Fridge!</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <input name="foodImage" placeholder="Food Image URL" onChange={handleChange} required className="input input-bordered w-full" />
         <input name="foodTitle" placeholder="Food Name" onChange={handleChange} required className="input input-bordered w-full" />
@@ -70,7 +70,7 @@ const AddFood = () => {
         <small>Select Expiry Date: </small>
         <input name="expiryDate" type="date" onChange={handleChange} required className="input input-bordered w-full" />
         <textarea name="description" placeholder="Description" onChange={handleChange} required className="textarea textarea-bordered w-full"></textarea>
-        <button type="submit" className="btn bg-blue-400 text-white cursor-pointer rounded-full w-full">Add Food</button>
+        <button type="submit" className="btn btn-neutral cursor-pointer rounded-full w-full">Add Food</button>
       </form>
     </div>
   );
