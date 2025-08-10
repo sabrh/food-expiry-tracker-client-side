@@ -14,7 +14,7 @@ const Fridge = () => {
   const navigate = useNavigate()
 
   useEffect(() => {
-    fetch("http://localhost:3000/fridge-foods")
+    fetch("https://food-expiry-tracker-server-side.vercel.app/fridge-foods")
       .then((res) => res.json())
       .then((data) => {
         setItems(data)

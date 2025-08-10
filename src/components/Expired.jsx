@@ -5,7 +5,7 @@ const Expired = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/expired-foods")
+    fetch("https://food-expiry-tracker-server-side.vercel.app/expired-foods")
       .then((res) => res.json())
       .then((data) => setItems(data));
   }, []);

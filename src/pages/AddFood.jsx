@@ -32,7 +32,7 @@ const AddFood = () => {
     };
 
     try {
-      const res = await fetch("http://localhost:3000/api/foods", {
+      const res = await fetch("https://food-expiry-tracker-server-side.vercel.app/api/foods", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

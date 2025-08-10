@@ -1,9 +1,15 @@
 import React, { useContext } from 'react';
 import { NavLink, useLocation } from 'react-router';
-import logoImg from '../assets/logo.png';
+import logoImg from '../assets/fresh-food.png';
 import { signOut } from 'firebase/auth';
 import { auth } from '../firebase/firebase.init';
 import AuthContext from '../context/AuthContext'
+import { GiMeat } from "react-icons/gi";
+import { FaCarrot } from "react-icons/fa";
+import { PiCheeseFill } from "react-icons/pi";
+import { GiChocolateBar } from "react-icons/gi";
+import { TbBottleFilled } from "react-icons/tb";
+
 const Navbar = () => {
      const location=useLocation()
         const {user}=useContext(AuthContext)
@@ -18,20 +24,36 @@ const Navbar = () => {
         }
     const links = 
         <>
-            <li><NavLink to='/' className={({ isActive }) => isActive ? 
-            'underline text-gray-800 underline-offset-4 font-semibold' : ''}>Home</NavLink></li>
+            <li className='uppercase'><NavLink to='/' className={({ isActive }) => isActive ? 
+            'underline text-blue-400 underline-offset-4 font-bold' : ''}>Home</NavLink></li>
     
-            <li><NavLink to='/fridge' className={({ isActive }) => isActive ? 
-            'underline  text-gray-800 underline-offset-4 font-semibold' : ''}>Fridge</NavLink></li>
+            <li className='uppercase'><NavLink to='/fridge' className={({ isActive }) => isActive ? 
+            'underline  text-blue-400 underline-offset-4 font-bold' : ''}>Fridge</NavLink></li>
+
+            <li className='uppercase'><NavLink to='/fruit-veg' className={({ isActive }) => isActive ? 
+            'underline  text-blue-400 underline-offset-4 font-bold' : ''}><FaCarrot size={20} />Fruits/ Veg</NavLink></li>
+
+            <li className='uppercase'><NavLink to='/meat-fish' className={({ isActive }) => isActive ? 
+            'underline  text-blue-400 underline-offset-4 font-bold' : ''}><GiMeat size={20}/>Meats & Fish</NavLink></li>
+
+            <li className='uppercase'><NavLink to='/dairy' className={({ isActive }) => isActive ? 
+            'underline  text-blue-400 underline-offset-4 font-bold' : ''}><PiCheeseFill size={20} />Dairy</NavLink></li>
+
+            <li className='uppercase'><NavLink to='/snacks' className={({ isActive }) => isActive ? 
+            'underline  text-blue-400 underline-offset-4 font-bold' : ''}><GiChocolateBar size={20} />Snacks</NavLink></li>
+
+            <li className='uppercase'><NavLink to='/drinks' className={({ isActive }) => isActive ? 
+            'underline  text-blue-400 underline-offset-4 font-bold' : ''}><TbBottleFilled size={20} />Drinks</NavLink></li>
+
 
             {user && (
                 <>
-                    <li>
+                    <li className='uppercase'>
                     <NavLink to="/add-food" className={({ isActive }) =>
                         isActive ? 'underline text-gray-800 underline-offset-4 font-semibold' : ''}>Add Food</NavLink>
                     </li>
 
-                    <li>
+                    <li className='uppercase'>
                     <NavLink to="/my-items" className={({ isActive }) =>
                         isActive ? 'underline text-gray-800 underline-offset-4 font-semibold' : ''}>My Items</NavLink>
                     </li>
@@ -40,7 +62,7 @@ const Navbar = () => {
         </>
 
     return (
-        <div className="navbar bg-base-200 shadow-sm md:px-16">
+        <div className="navbar shadow-sm md:px-16">
 
             <div className="navbar-start">
                 <div className="dropdown">
@@ -53,7 +75,7 @@ const Navbar = () => {
                     {links}
                 </ul>
                 </div>
-                <NavLink to='/' className="flex items-center text-xl gap-x-1">ExpiryTracker<img src={logoImg} className="w-8" alt='logo' /></NavLink>
+                <NavLink to='/' className="flex items-center font-extrabold text-2xl text-gray-700 gap-x-2"><img src={logoImg} className="w-10" alt='logo' />ExpiryTracker</NavLink>
             </div>
 
             <div className="navbar-center hidden lg:flex">
@@ -62,19 +84,19 @@ const Navbar = () => {
                 </ul>
             </div>
             
-           <div className="navbar-end relative md:justify-between items-center gap-x-4 md:ml-10">
+           <div className="navbar-end relative items-center gap-x-4 md:ml-10">
             {!user ? (
                 <div className='flex flex-row justify-end items-center gap-4'>
                     <p className='text-gray-800 font-bold'><NavLink to='/login' className={({ isActive }) => isActive ? 
-                    'underline  text-gray-800 underline-offset-4 font-semibold' : ''}>Login</NavLink></p>
+                    'underline  text-gray-800 underline-offset-4 font-semibold' : ''}>LOGIN</NavLink></p>
 
                     <NavLink to="/register" state={{ from: location.pathname }} className="btn rounded-full bg-gray-900 text-white hover:bg-white hover:text-gray-900 border-gray-800">
-                    Register</NavLink>  
+                    REGISTER</NavLink>  
                 </div>  
                 ) : (
                 <div className='flex flex-row items-center gap-4'>
                     <img className="w-12 h-12 rounded-full border" src={user?.photoURL} alt="User" title={user?.displayName} />
-                    <button onClick={handleLogout} className="btn btn-error text-white rounded-full">Logout</button>
+                    <button onClick={handleLogout} className="btn btn-error text-white rounded-full">LOGOUT</button>
                 </div>
                 )}
             

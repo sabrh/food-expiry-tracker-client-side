@@ -12,7 +12,7 @@ const FoodDetails = () => {
     const [notes, setNotes] = useState([]);
 
     useEffect(() =>{
-    axios.get(`http://localhost:3000/api/foods/${id}`).then((res) => {
+    axios.get(`https://food-expiry-tracker-server-side.vercel.app/api/foods/${id}`).then((res) => {
       setFood(res.data);
       setNotes(res.data.notes || []);
     });
@@ -34,7 +34,7 @@ const FoodDetails = () => {
     };
 
     try {
-    const res = await axios.post(`http://localhost:3000/api/foods/${id}/notes`, note);
+    const res = await axios.post(`https://food-expiry-tracker-server-side.vercel.app/api/foods/${id}/notes`, note);
 
     if (res.data.success) {
       setNotes((prevNotes) => [...prevNotes, { text: noteText, date: note.date }]);
